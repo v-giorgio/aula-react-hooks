@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import { GlobalStyle } from "./styles/global";
+
+import LightToggle from "./components/LightToggle";
+import GithubUser from "./components/GithubUser";
+import RandomUser from "./components/RandomUser";
+import { TitleProvider } from "./contexts/title";
+import { LocationProvider } from "./contexts/location";
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <LocationProvider>
+        <TitleProvider>
+          <GlobalStyle />
+          <LightToggle />
+          <GithubUser />
+          <RandomUser />
+        </TitleProvider>
+      </LocationProvider>
+    </>
   );
-}
+};
 
 export default App;
