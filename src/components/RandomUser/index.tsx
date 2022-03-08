@@ -16,9 +16,15 @@ interface UserInfo {
   email: string;
 }
 
+/* interface Location {
+  latitude: any;
+  longitude: any;
+} */
+
 const RandomUser = () => {
   const [user, setUser] = useState<UserInfo>();
   const title = useContext(TitleContext);
+  // const { latitude, longitude } = useContext(LocationContext);
   const { latitude, longitude } = useLocation();
 
   const handleUser = async () => {
@@ -32,6 +38,23 @@ const RandomUser = () => {
 
     setUser({ gender: userData[0], name: userData[1], email: userData[2] });
   };
+
+  /*   const [location, setLocation] = useState<Location>();
+
+  const handleLocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        setLocation({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+        });
+      });
+    }
+  };
+
+  useEffect(() => {
+    handleLocation();
+  }); */
 
   return (
     <>
