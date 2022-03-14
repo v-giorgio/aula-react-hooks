@@ -66,3 +66,9 @@ npm start
 #### ➡️ Para parar de servir o projeto, basta utilizar o comando `CTRL + C` no terminal
 
 <hr>
+
+<div align="center">
+MIT License<br>
+Copyright © 2022<br> 
+  ✨ Created by <b>Vitor Giorgio</b> ✨
+</div>
