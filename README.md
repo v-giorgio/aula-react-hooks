@@ -37,7 +37,19 @@
 git clone https://github.com/v-giorgio/aula-react-hooks.git
 ```
 
-#### ➡️ Abra a pasta no terminal (pode ser pelo VSCode) e execute o comando para instalar as dependências
+#### ➡️ Abra a pasta no terminal
+
+```
+cd aula-react-hooks
+```
+
+#### ➡️ Abra o projeto no VSCode
+
+```
+code .
+```
+
+#### ➡️ Abra o terminal do VSCode e execute o comando para instalar as dependências do projeto
 
 ```
 npm install
@@ -48,5 +60,9 @@ npm install
 ```
 npm start
 ```
+
+#### O projeto irá rodar em [http://localhost:3000](http://localhost:3000)
+
+#### ➡️ Para parar de servir o projeto, basta utilizar o comando `CTRL + C` no terminal
 
 <hr>
